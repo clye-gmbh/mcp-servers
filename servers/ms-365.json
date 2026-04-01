@@ -37,7 +37,6 @@
                 {
                     "type": "named",
                     "name": "--work-mode",
-                    "description": "Optional work mode selection for the server runtime.",
                     "isRequired": false
                 }
             ]
