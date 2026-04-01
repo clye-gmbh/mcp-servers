@@ -2,6 +2,7 @@
     "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
     "name": "clye.ai/ms-365",
     "description": "Microsoft 365 Integration",
+    "version": "0.0.0",
     "title": "Microsoft 365 Integration",
     "websiteUrl": "https://github.com/clye-gmbh/ms-365-mcp-server",
     "packages": [
@@ -27,14 +28,16 @@
                     "isRequired": false
                 },
                 {
-                    "name":"MS365_MCP_OAUTH_TOKEN",
+                    "name": "MS365_MCP_OAUTH_TOKEN",
                     "isSecret": true,
                     "description": "If you are running ms-365-mcp-server as part of a larger system that manages Microsoft OAuth tokens externally, you can provide an access token directly to this MCP server"
                 }
             ],
             "packageArguments": [
                 {
-                    "name": "work-mode",
+                    "type": "named",
+                    "name": "--work-mode",
+                    "description": "Optional work mode selection for the server runtime.",
                     "isRequired": false
                 }
             ]
