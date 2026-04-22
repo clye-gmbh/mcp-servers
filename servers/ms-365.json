@@ -9,7 +9,7 @@
     },
     "ai.clye.mcp.persistenceDirectory": "/data/ms-365-mcp"
   },
-  "description": "Der MS 365 MCP-Server verbindet den AI HUB mit Microsoft 365-Diensten über die Microsoft Graph API. Damit kann ein Assistent direkt auf E-Mails, Kalender, Dateien, Teams, SharePoint und viele weitere Dienste zugreifen und diese steuern.",
+  "description": "Ermöglicht den Zugriff auf Microsoft 365-Dienste wie E-Mails, Kalender, Dateien, Teams, SharePoint.",
   "version": "0.0.0",
   "title": "Microsoft 365",
   "icons": [
