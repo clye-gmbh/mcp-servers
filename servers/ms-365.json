@@ -43,6 +43,7 @@
         {
           "name": "MS365_MCP_OAUTH_TOKEN",
           "isSecret": true,
+          "isRequired": false,
           "description": "If you are running ms-365-mcp-server as part of a larger system that manages Microsoft OAuth tokens externally, you can provide an access token directly to this MCP server"
         },
         {
@@ -64,6 +65,11 @@
         {
           "type": "named",
           "name": "--work-mode",
+          "isRequired": false
+        },
+        {
+          "type": "named",
+          "name": "--read-only",
           "isRequired": false
         }
       ]
