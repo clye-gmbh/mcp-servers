@@ -1,45 +1,58 @@
 {
-    "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-    "name": "clye.ai/ms-365",
-    "description": "Microsoft 365 Integration",
-    "version": "0.0.0",
-    "title": "Microsoft 365 Integration",
-    "websiteUrl": "https://github.com/clye-gmbh/ms-365-mcp-server",
-    "packages": [
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "clye.ai/ms-365",
+  "_meta": {
+    "ai.clye.mcp.serverKey": "ms-365",
+    "ai.clye.mcp.defaultEnvironmentVariables": {
+      "MS365_MCP_TOKEN_CACHE_PATH": "/data/ms-365-mcp/.token-cache.json",
+      "MS365_MCP_SELECTED_ACCOUNT_PATH": "/data/ms-365-mcp/.selected-account.json"
+    },
+    "ai.clye.mcp.persistenceDirectory": "/data/ms-365-mcp"
+  },
+  "description": "Microsoft 365 Integration",
+  "version": "0.0.0",
+  "title": "Microsoft 365 Integration",
+  "icons": [
+    {
+      "src": "https://svgl.app/library/microsoft-office.svg"
+    }
+  ],
+  "websiteUrl": "https://github.com/clye-gmbh/ms-365-mcp-server",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@clye-gmbh/ms-365-mcp-server",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
         {
-            "registryType": "npm",
-            "identifier": "@clye-gmbh/ms-365-mcp-server",
-            "transport": {
-                "type": "stdio"
-            },
-            "environmentVariables": [
-                {
-                    "name": "MS365_MCP_CLIENT_ID",
-                    "isRequired": false
-                },
-                {
-                    "name": "MS365_MCP_CLIENT_SECRET",
-                    "isSecret": true,
-                    "isRequired": false
-                },
-                {
-                    "name": "MS365_MCP_TENANT_ID",
-                    "isSecret": false,
-                    "isRequired": false
-                },
-                {
-                    "name": "MS365_MCP_OAUTH_TOKEN",
-                    "isSecret": true,
-                    "description": "If you are running ms-365-mcp-server as part of a larger system that manages Microsoft OAuth tokens externally, you can provide an access token directly to this MCP server"
-                }
-            ],
-            "packageArguments": [
-                {
-                    "type": "named",
-                    "name": "--work-mode",
-                    "isRequired": false
-                }
-            ]
+          "name": "MS365_MCP_CLIENT_ID",
+          "isRequired": false
+        },
+        {
+          "name": "MS365_MCP_CLIENT_SECRET",
+          "isSecret": true,
+          "isRequired": false
+        },
+        {
+          "name": "MS365_MCP_TENANT_ID",
+          "isSecret": false,
+          "isRequired": false
+        },
+        {
+          "name": "MS365_MCP_OAUTH_TOKEN",
+          "isSecret": true,
+          "description": "If you are running ms-365-mcp-server as part of a larger system that manages Microsoft OAuth tokens externally, you can provide an access token directly to this MCP server"
         }
-    ]
+      ],
+      "packageArguments": [
+        {
+          "type": "named",
+          "name": "--work-mode",
+          "isRequired": false
+        }
+      ]
+    }
+  ]
 }
