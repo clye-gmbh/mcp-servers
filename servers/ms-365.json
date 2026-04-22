@@ -17,7 +17,7 @@
       "src": "https://svgl.app/library/microsoft-office.svg"
     }
   ],
-  "websiteUrl": "https://github.com/clye-gmbh/ms-365-mcp-server",
+  "websiteUrl": "https://docs.clye.ai/mcp-server-ms-365",
   "packages": [
     {
       "registryType": "npm",
