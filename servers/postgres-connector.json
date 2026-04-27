@@ -4,7 +4,7 @@
   "_meta": {
     "ai.clye.mcp.serverKey": "postgres-connector"
   },
-  "description": "Verbindet einen PostgreSQL-Datenbankserver und stellt ein `execute_sql`-Tool bereit, mit dem SQL-Abfragen direkt aus dem KI-Assistenten heraus ausgeführt werden können.",
+  "description": "Verbindet einen PostgreSQL-Datenbankserver,",
   "version": "0.0.0",
   "title": "PostgreSQL Connector",
   "icons": [

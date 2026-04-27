@@ -4,7 +4,7 @@
   "_meta": {
     "ai.clye.mcp.serverKey": "filesystem-connector"
   },
-  "description": "Stellt einen oder mehrere Ordner als MCP-Ressourcen (filesystem://) und Dateioperations-Tools bereit. Unterstützt lesen, schreiben, suchen, verschieben, kopieren und löschen von Dateien innerhalb konfigurierter Wurzelpfade.",
+  "description": "Stellt einen oder mehrere Ordner als MCP-Ressourcen und Dateioperations-Tools bereit.",
   "version": "0.0.0",
   "title": "Filesystem Connector",
   "icons": [

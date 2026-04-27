@@ -4,7 +4,7 @@
   "_meta": {
     "ai.clye.mcp.serverKey": "terminal-executor"
   },
-  "description": "MCP-Server zur Ausführung von Terminal-Befehlen als Vordergrund- oder Hintergrundprozesse mit optionalem Arbeitsverzeichnis.",
+  "description": "MCP-Server zur Ausführung von Terminal-Befehlen als Vordergrund- oder Hintergrundprozesse.",
   "version": "0.0.0",
   "title": "Terminal Executor",
   "icons": [

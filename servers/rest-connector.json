@@ -4,7 +4,7 @@
   "_meta": {
     "ai.clye.mcp.serverKey": "rest-connector"
   },
-  "description": "Wandelt OpenAPI 3.0 Spezifikationen (JSON oder YAML) in MCP-Tools um. Jede Operation wird zu einem aufrufbaren Tool, das HTTP-Methoden, Pfad-/Query-/Header-Parameter und Request-Bodies direkt aus der Spec übernimmt.",
+  "description": "Wandelt OpenAPI 3.0 Spezifikationen (JSON oder YAML) in MCP-Tools um. ",
   "version": "0.0.0",
   "title": "REST Connector",
   "icons": [

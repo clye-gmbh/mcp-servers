@@ -4,7 +4,7 @@
   "_meta": {
     "ai.clye.mcp.serverKey": "combined-executor"
   },
-  "description": "Kombinierter MCP-Server, der sowohl Python- als auch Terminal-Ausführung in einem einzigen Server bereitstellt. Entspricht dem Standard-Verhalten des Docker-Images.",
+  "description": "Kombinierter MCP-Server, der sowohl Python- als auch Terminal-Ausführung bereitstellt.",
   "version": "0.0.0",
   "title": "Combined Executor",
   "icons": [

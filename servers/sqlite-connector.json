@@ -4,7 +4,7 @@
   "_meta": {
     "ai.clye.mcp.serverKey": "sqlite-connector"
   },
-  "description": "Stellt eine SQLite-Datenbankverbindung als MCP-Server bereit und ermöglicht SQL-Abfragen über das Tool `execute_sql`.",
+  "description": "Stellt eine SQLite-Datenbankverbindung als MCP-Server bereit und ermöglicht SQL-Abfragen.",
   "version": "0.0.0",
   "title": "SQLite Connector",
   "icons": [
