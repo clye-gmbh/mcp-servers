@@ -9,7 +9,7 @@
   "title": "Office CLI",
   "icons": [
     {
-      "src": "https://api.iconify.design/hugeicons:office-365"
+      "src": "https://api.iconify.design/hugeicons:office-365.svg"
     }
   ],
   "websiteUrl": "https://www.npmjs.com/package/officecli",
