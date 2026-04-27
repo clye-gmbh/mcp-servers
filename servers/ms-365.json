@@ -41,6 +41,56 @@
           "isRequired": false
         },
         {
+          "name": "MS365_MCP_ORG_MODE",
+          "isSecret": false,
+          "isRequired": false,
+          "format": "boolean",
+          "choices": ["true", "false"],
+          "description": "Auf 'true' setzen, um den Org-Modus zu aktivieren (Zugriff auf organisationsweite Daten)"
+        },
+        {
+          "name": "MS365_MCP_OUTPUT_FORMAT",
+          "isSecret": false,
+          "isRequired": false,
+          "choices": ["toon"],
+          "description": "Ausgabeformat festlegen. Mit dem Wert 'toon' wird das TOON-Format aktiviert."
+        },
+        {
+          "name": "MS365_MCP_MAX_TOP",
+          "isSecret": false,
+          "isRequired": false,
+          "description": "Maximale Anzahl von Ergebnissen pro Anfrage begrenzen (z. B. '50')",
+          "format": "number"
+        },
+        {
+          "name": "MS365_MCP_BODY_FORMAT",
+          "isSecret": false,
+          "isRequired": false,
+          "choices": ["text", "html"],
+          "description": "Format für E-Mail-Inhalte. Mit dem Wert 'html' wird der E-Mail-Text als HTML statt als Plaintext zurückgegeben."
+        },
+        {
+          "name": "MS365_MCP_CLOUD_TYPE",
+          "isSecret": false,
+          "isRequired": false,
+          "choices": ["china"],
+          "description": "Cloud-Instanz festlegen. Mit dem Wert 'china' wird Microsoft 365 China (21Vianet) verwendet."
+        },
+        {
+          "name": "READ_ONLY",
+          "isSecret": false,
+          "isRequired": false,
+          "format": "boolean",
+          "choices": ["true", "false"],
+          "description": "Auf 'true' setzen, um den Server im reinen Lesemodus zu betreiben (keine schreibenden Operationen erlaubt). Entspricht dem Flag --read-only."
+        },
+        {
+          "name": "ENABLED_TOOLS",
+          "isSecret": false,
+          "isRequired": false,
+          "description": "Kommagetrennte Liste von Regex-Mustern, um verfügbare Werkzeuge zu filtern. Nur Tools, deren Name auf eines der Muster passt, werden aktiviert."
+        },
+        {
           "name": "MS365_MCP_OAUTH_TOKEN",
           "isSecret": true,
           "isRequired": false,
