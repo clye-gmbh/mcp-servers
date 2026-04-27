@@ -15,8 +15,8 @@
   "websiteUrl": "https://ai-hub-cli.s3.de.io.cloud.ovh.net/index.html#postgresql",
   "packages": [
     {
-      "registryType": "go",
-      "identifier": "github.com/clye-gmbh/ai-hub-cli",
+      "registryType": "system",
+      "identifier": "ai-hub-cli",
       "transport": {
         "type": "stdio"
       },
