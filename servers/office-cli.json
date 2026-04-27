@@ -1,0 +1,25 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "clye.ai/office-cli",
+  "_meta": {
+    "ai.clye.mcp.serverKey": "office-cli"
+  },
+  "description": "Office CLI MCP Server - Enables access to Microsoft Office documents and operations.",
+  "version": "0.0.0",
+  "title": "Office CLI",
+  "icons": [
+    {
+      "src": "https://api.iconify.design/hugeicons:office-365"
+    }
+  ],
+  "websiteUrl": "https://www.npmjs.com/package/officecli",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "officecli",
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ]
+}
