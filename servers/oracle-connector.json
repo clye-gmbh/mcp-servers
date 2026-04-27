@@ -1,0 +1,94 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "clye.ai/oracle-connector",
+  "_meta": {
+    "ai.clye.mcp.serverKey": "oracle-connector"
+  },
+  "description": "Verbindet einen Oracle-Datenbankserver als MCP-Server und stellt ein `execute_sql`-Tool bereit.",
+  "version": "0.0.0",
+  "title": "Oracle Connector",
+  "icons": [
+    {
+      "src": "https://api.iconify.design/simple-icons:oracle.svg"
+    }
+  ],
+  "websiteUrl": "https://ai-hub-cli.s3.de.io.cloud.ovh.net/index.html#oracle",
+  "packages": [
+    {
+      "registryType": "go",
+      "identifier": "github.com/clye-gmbh/ai-hub-cli",
+      "transport": {
+        "type": "stdio"
+      },
+      "packageArguments": [
+        {
+          "type": "positional",
+          "value": "oracle-connector",
+          "isRequired": true
+        },
+        {
+          "type": "named",
+          "name": "--host",
+          "isRequired": false
+        },
+        {
+          "type": "named",
+          "name": "--port",
+          "isRequired": false
+        },
+        {
+          "type": "named",
+          "name": "--user",
+          "isRequired": false
+        },
+        {
+          "type": "named",
+          "name": "--password",
+          "isRequired": false
+        },
+        {
+          "type": "named",
+          "name": "--service",
+          "isRequired": false
+        },
+        {
+          "type": "named",
+          "name": "--sid",
+          "isRequired": false
+        },
+        {
+          "type": "named",
+          "name": "--dsn",
+          "isRequired": false
+        }
+      ],
+      "environmentVariables": [
+        {
+          "name": "ORACLE_HOST",
+          "isSecret": false,
+          "isRequired": false
+        },
+        {
+          "name": "ORACLE_PORT",
+          "isSecret": false,
+          "isRequired": false
+        },
+        {
+          "name": "ORACLE_USER",
+          "isSecret": false,
+          "isRequired": false
+        },
+        {
+          "name": "ORACLE_PASSWORD",
+          "isSecret": true,
+          "isRequired": false
+        },
+        {
+          "name": "ORACLE_SERVICE",
+          "isSecret": false,
+          "isRequired": false
+        }
+      ]
+    }
+  ]
+}

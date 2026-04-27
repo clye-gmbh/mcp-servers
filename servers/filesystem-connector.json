@@ -1,0 +1,57 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "clye.ai/filesystem-connector",
+  "_meta": {
+    "ai.clye.mcp.serverKey": "filesystem-connector"
+  },
+  "description": "Stellt einen oder mehrere Ordner als MCP-Ressourcen (filesystem://) und Dateioperations-Tools bereit. Unterstützt lesen, schreiben, suchen, verschieben, kopieren und löschen von Dateien innerhalb konfigurierter Wurzelpfade.",
+  "version": "0.0.0",
+  "title": "Filesystem Connector",
+  "icons": [
+    {
+      "src": "https://api.iconify.design/material-symbols:folder.svg"
+    }
+  ],
+  "websiteUrl": "https://ai-hub-cli.s3.de.io.cloud.ovh.net/index.html#filesystem-connector",
+  "packages": [
+    {
+      "registryType": "go",
+      "identifier": "github.com/clye-gmbh/ai-hub-cli",
+      "transport": {
+        "type": "stdio"
+      },
+      "packageArguments": [
+        {
+          "type": "positional",
+          "value": "filesystem-connector",
+          "isRequired": true
+        },
+        {
+          "type": "named",
+          "name": "--path",
+          "description": "Primärer Wurzelpfad, der als MCP-Ressource bereitgestellt wird.",
+          "isRequired": false,
+          "format": "filepath"
+        },
+        {
+          "type": "named",
+          "name": "--volume",
+          "description": "Zusätzliche benannte Verzeichnisse im Format NAME=ABSOLUTER_PFAD (wiederholbar, wie Docker -v).",
+          "isRequired": false
+        },
+        {
+          "type": "named",
+          "name": "--permission",
+          "description": "Zugriffsebene: 'read-only' (Standard) oder 'full' (inkl. Schreiben, Löschen, Verschieben, Kopieren).",
+          "isRequired": false
+        },
+        {
+          "type": "named",
+          "name": "--tools",
+          "description": "Kommagetrennte Allowlist von Tool-Namen, z. B. 'search_files,read_file,list_directory'.",
+          "isRequired": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "clye.ai/mssql-connector",
+  "_meta": {
+    "ai.clye.mcp.serverKey": "mssql-connector"
+  },
+  "description": "Verbindet einen Microsoft SQL Server als MCP-Server und stellt das Tool execute_sql bereit.",
+  "version": "0.0.0",
+  "title": "MS SQL Server Connector",
+  "icons": [
+    {
+      "src": "https://api.iconify.design/simple-icons:microsoftsqlserver.svg"
+    }
+  ],
+  "websiteUrl": "https://ai-hub-cli.s3.de.io.cloud.ovh.net/index.html#ms-sql-server",
+  "packages": [
+    {
+      "registryType": "go",
+      "identifier": "github.com/clye-gmbh/ai-hub-cli",
+      "transport": {
+        "type": "stdio"
+      },
+      "packageArguments": [
+        {
+          "type": "positional",
+          "value": "mssql-connector",
+          "isRequired": true
+        },
+        {
+          "type": "named",
+          "name": "--host",
+          "isRequired": false
+        },
+        {
+          "type": "named",
+          "name": "--port",
+          "isRequired": false
+        },
+        {
+          "type": "named",
+          "name": "--user",
+          "isRequired": false
+        },
+        {
+          "type": "named",
+          "name": "--password",
+          "isRequired": false
+        },
+        {
+          "type": "named",
+          "name": "--database",
+          "isRequired": false
+        },
+        {
+          "type": "named",
+          "name": "--dsn",
+          "isRequired": false
+        }
+      ],
+      "environmentVariables": [
+        {
+          "name": "MSSQL_HOST",
+          "isRequired": false
+        },
+        {
+          "name": "MSSQL_PORT",
+          "isRequired": false
+        },
+        {
+          "name": "MSSQL_USER",
+          "isRequired": false
+        },
+        {
+          "name": "MSSQL_PASSWORD",
+          "isSecret": true,
+          "isRequired": false
+        },
+        {
+          "name": "MSSQL_DATABASE",
+          "isRequired": false
+        }
+      ]
+    }
+  ]
+}

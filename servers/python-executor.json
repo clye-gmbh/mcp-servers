@@ -1,0 +1,32 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "clye.ai/python-executor",
+  "_meta": {
+    "ai.clye.mcp.serverKey": "python-executor"
+  },
+  "description": "Sandboxierter Python-Executor mit persistentem Zustand. Führt Python-Code aus und unterstützt optionale UV-basierte venvs sowie Dateiausgaben.",
+  "version": "0.0.0",
+  "title": "Python Executor",
+  "icons": [
+    {
+      "src": "https://api.iconify.design/logos:python.svg"
+    }
+  ],
+  "websiteUrl": "https://ai-hub-cli.s3.de.io.cloud.ovh.net/index.html#python-executor",
+  "packages": [
+    {
+      "registryType": "go",
+      "identifier": "github.com/clye-gmbh/ai-hub-cli",
+      "transport": {
+        "type": "stdio"
+      },
+      "packageArguments": [
+        {
+          "type": "positional",
+          "value": "python-executor",
+          "isRequired": true
+        }
+      ]
+    }
+  ]
+}

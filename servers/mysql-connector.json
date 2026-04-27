@@ -1,0 +1,90 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "clye.ai/mysql-connector",
+  "_meta": {
+    "ai.clye.mcp.serverKey": "mysql-connector"
+  },
+  "description": "Verbindet einen MySQL-Datenbankserver und stellt ein `execute_sql`-Tool bereit, um SQL-Abfragen direkt aus dem KI-Assistenten heraus auszuführen.",
+  "version": "0.0.0",
+  "title": "MySQL Connector",
+  "icons": [
+    {
+      "src": "https://api.iconify.design/logos:mysql.svg"
+    }
+  ],
+  "websiteUrl": "https://ai-hub-cli.s3.de.io.cloud.ovh.net/index.html#mysql",
+  "packages": [
+    {
+      "registryType": "go",
+      "identifier": "github.com/clye-gmbh/ai-hub-cli",
+      "transport": {
+        "type": "stdio"
+      },
+      "packageArguments": [
+        {
+          "type": "positional",
+          "value": "mysql-connector",
+          "isRequired": true
+        },
+        {
+          "type": "named",
+          "name": "--host",
+          "isRequired": false
+        },
+        {
+          "type": "named",
+          "name": "--port",
+          "isRequired": false
+        },
+        {
+          "type": "named",
+          "name": "--user",
+          "isRequired": false
+        },
+        {
+          "type": "named",
+          "name": "--password",
+          "isRequired": false
+        },
+        {
+          "type": "named",
+          "name": "--dbname",
+          "isRequired": false
+        },
+        {
+          "type": "named",
+          "name": "--dsn",
+          "isRequired": false
+        }
+      ],
+      "environmentVariables": [
+        {
+          "name": "MYSQL_HOST",
+          "isRequired": false,
+          "description": "Hostname oder IP-Adresse des MySQL-Servers"
+        },
+        {
+          "name": "MYSQL_PORT",
+          "isRequired": false,
+          "description": "Port des MySQL-Servers (Standard: 3306)"
+        },
+        {
+          "name": "MYSQL_USER",
+          "isRequired": false,
+          "description": "Benutzername für die MySQL-Verbindung"
+        },
+        {
+          "name": "MYSQL_PASSWORD",
+          "isSecret": true,
+          "isRequired": false,
+          "description": "Passwort für die MySQL-Verbindung"
+        },
+        {
+          "name": "MYSQL_DB",
+          "isRequired": false,
+          "description": "Name der MySQL-Datenbank"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "clye.ai/acp-connector",
+  "_meta": {
+    "ai.clye.mcp.serverKey": "acp-connector"
+  },
+  "description": "Brückt das Agent Client Protocol (ACP) zu lokalen Agenten-Prozessen über stdio. Agenten-Profile werden per JSON-Konfiguration definiert.",
+  "version": "0.0.0",
+  "title": "ACP Connector",
+  "icons": [
+    {
+      "src": "https://api.iconify.design/material-symbols:device-hub.svg"
+    }
+  ],
+  "websiteUrl": "https://ai-hub-cli.s3.de.io.cloud.ovh.net/index.html#acp-connector",
+  "packages": [
+    {
+      "registryType": "go",
+      "identifier": "github.com/clye-gmbh/ai-hub-cli",
+      "transport": {
+        "type": "stdio"
+      },
+      "packageArguments": [
+        {
+          "type": "positional",
+          "value": "acp-connector",
+          "isRequired": true
+        },
+        {
+          "type": "named",
+          "name": "--acp-agents-config",
+          "isRequired": false,
+          "description": "Pfad zur JSON-Datei mit Agenten-Profilen (id, command, args, description)"
+        },
+        {
+          "type": "named",
+          "name": "--workspace",
+          "isRequired": false,
+          "description": "Arbeitsverzeichnis für Pfadvalidierung (Standard: aktuelles Verzeichnis)"
+        },
+        {
+          "type": "named",
+          "name": "--acp-auto-approve",
+          "isRequired": false,
+          "description": "Session- und Berechtigungsanfragen des Agenten automatisch genehmigen (Standard: true)"
+        }
+      ],
+      "environmentVariables": [
+        {
+          "name": "ACP_AGENTS_CONFIG",
+          "isRequired": false,
+          "description": "Pfad zur JSON-Konfigurationsdatei mit Agenten-Profilen"
+        },
+        {
+          "name": "AI_HUB_URL",
+          "isRequired": false,
+          "description": "Basis-URL der AI Hub Instanz"
+        },
+        {
+          "name": "AI_HUB_API_KEY",
+          "isSecret": true,
+          "isRequired": false,
+          "description": "API-Schlüssel für die AI Hub Instanz"
+        }
+      ]
+    }
+  ]
+}

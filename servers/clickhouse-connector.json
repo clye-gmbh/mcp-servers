@@ -1,0 +1,96 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "clye.ai/clickhouse-connector",
+  "_meta": {
+    "ai.clye.mcp.serverKey": "clickhouse-connector"
+  },
+  "description": "Verbindet einen ClickHouse-Datenbankserver und stellt ein `execute_sql`-Tool bereit.",
+  "version": "0.0.0",
+  "title": "ClickHouse Connector",
+  "icons": [
+    {
+      "src": "https://api.iconify.design/simple-icons:clickhouse.svg"
+    }
+  ],
+  "websiteUrl": "https://ai-hub-cli.s3.de.io.cloud.ovh.net/index.html#clickhouse",
+  "packages": [
+    {
+      "registryType": "go",
+      "identifier": "github.com/clye-gmbh/ai-hub-cli",
+      "transport": {
+        "type": "stdio"
+      },
+      "packageArguments": [
+        {
+          "type": "positional",
+          "value": "clickhouse-connector",
+          "isRequired": true
+        },
+        {
+          "type": "named",
+          "name": "--host",
+          "isRequired": false,
+          "description": "ClickHouse host (default: localhost)"
+        },
+        {
+          "type": "named",
+          "name": "--port",
+          "isRequired": false,
+          "description": "ClickHouse port (default: 9000)"
+        },
+        {
+          "type": "named",
+          "name": "--user",
+          "isRequired": false,
+          "description": "ClickHouse username"
+        },
+        {
+          "type": "named",
+          "name": "--password",
+          "isRequired": false,
+          "description": "ClickHouse password"
+        },
+        {
+          "type": "named",
+          "name": "--database",
+          "isRequired": false,
+          "description": "ClickHouse database name"
+        },
+        {
+          "type": "named",
+          "name": "--dsn",
+          "isRequired": false,
+          "description": "ClickHouse DSN (e.g. clickhouse://user:password@localhost:9000/default?secure=false)"
+        }
+      ],
+      "environmentVariables": [
+        {
+          "name": "CLICKHOUSE_HOST",
+          "isRequired": false,
+          "description": "ClickHouse host"
+        },
+        {
+          "name": "CLICKHOUSE_PORT",
+          "isRequired": false,
+          "description": "ClickHouse port"
+        },
+        {
+          "name": "CLICKHOUSE_USER",
+          "isRequired": false,
+          "description": "ClickHouse username"
+        },
+        {
+          "name": "CLICKHOUSE_PASSWORD",
+          "isSecret": true,
+          "isRequired": false,
+          "description": "ClickHouse password"
+        },
+        {
+          "name": "CLICKHOUSE_DATABASE",
+          "isRequired": false,
+          "description": "ClickHouse database name"
+        }
+      ]
+    }
+  ]
+}

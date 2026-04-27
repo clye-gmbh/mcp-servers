@@ -1,0 +1,86 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "clye.ai/postgres-connector",
+  "_meta": {
+    "ai.clye.mcp.serverKey": "postgres-connector"
+  },
+  "description": "Verbindet einen PostgreSQL-Datenbankserver und stellt ein `execute_sql`-Tool bereit, mit dem SQL-Abfragen direkt aus dem KI-Assistenten heraus ausgeführt werden können.",
+  "version": "0.0.0",
+  "title": "PostgreSQL Connector",
+  "icons": [
+    {
+      "src": "https://api.iconify.design/logos:postgresql.svg"
+    }
+  ],
+  "websiteUrl": "https://ai-hub-cli.s3.de.io.cloud.ovh.net/index.html#postgresql",
+  "packages": [
+    {
+      "registryType": "go",
+      "identifier": "github.com/clye-gmbh/ai-hub-cli",
+      "transport": {
+        "type": "stdio"
+      },
+      "packageArguments": [
+        {
+          "type": "positional",
+          "value": "postgres-connector",
+          "isRequired": true
+        },
+        {
+          "type": "named",
+          "name": "--dsn",
+          "isRequired": false,
+          "description": "Full PostgreSQL DSN, e.g. host=localhost port=5432 user=postgres password=mypass dbname=mydb sslmode=disable"
+        },
+        {
+          "type": "named",
+          "name": "--host",
+          "isRequired": false
+        },
+        {
+          "type": "named",
+          "name": "--port",
+          "isRequired": false
+        },
+        {
+          "type": "named",
+          "name": "--user",
+          "isRequired": false
+        },
+        {
+          "type": "named",
+          "name": "--dbname",
+          "isRequired": false
+        }
+      ],
+      "environmentVariables": [
+        {
+          "name": "POSTGRES_HOST",
+          "isRequired": false,
+          "description": "PostgreSQL server hostname"
+        },
+        {
+          "name": "POSTGRES_PORT",
+          "isRequired": false,
+          "description": "PostgreSQL server port (default: 5432)"
+        },
+        {
+          "name": "POSTGRES_USER",
+          "isRequired": false,
+          "description": "PostgreSQL username"
+        },
+        {
+          "name": "POSTGRES_PASSWORD",
+          "isSecret": true,
+          "isRequired": false,
+          "description": "PostgreSQL password"
+        },
+        {
+          "name": "POSTGRES_DB",
+          "isRequired": false,
+          "description": "PostgreSQL database name"
+        }
+      ]
+    }
+  ]
+}

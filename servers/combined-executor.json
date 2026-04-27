@@ -1,0 +1,32 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "clye.ai/combined-executor",
+  "_meta": {
+    "ai.clye.mcp.serverKey": "combined-executor"
+  },
+  "description": "Kombinierter MCP-Server, der sowohl Python- als auch Terminal-Ausführung in einem einzigen Server bereitstellt. Entspricht dem Standard-Verhalten des Docker-Images.",
+  "version": "0.0.0",
+  "title": "Combined Executor",
+  "icons": [
+    {
+      "src": "https://api.iconify.design/material-symbols:terminal.svg"
+    }
+  ],
+  "websiteUrl": "https://ai-hub-cli.s3.de.io.cloud.ovh.net/index.html#combined-executor",
+  "packages": [
+    {
+      "registryType": "go",
+      "identifier": "github.com/clye-gmbh/ai-hub-cli",
+      "transport": {
+        "type": "stdio"
+      },
+      "packageArguments": [
+        {
+          "type": "positional",
+          "value": "combined-executor",
+          "isRequired": true
+        }
+      ]
+    }
+  ]
+}

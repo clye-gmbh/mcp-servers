@@ -1,0 +1,56 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "clye.ai/rest-connector",
+  "_meta": {
+    "ai.clye.mcp.serverKey": "rest-connector"
+  },
+  "description": "Wandelt OpenAPI 3.0 Spezifikationen (JSON oder YAML) in MCP-Tools um. Jede Operation wird zu einem aufrufbaren Tool, das HTTP-Methoden, Pfad-/Query-/Header-Parameter und Request-Bodies direkt aus der Spec übernimmt.",
+  "version": "0.0.0",
+  "title": "REST Connector",
+  "icons": [
+    {
+      "src": "https://api.iconify.design/material-symbols:api.svg"
+    }
+  ],
+  "websiteUrl": "https://ai-hub-cli.s3.de.io.cloud.ovh.net/index.html#rest-connector",
+  "packages": [
+    {
+      "registryType": "go",
+      "identifier": "github.com/clye-gmbh/ai-hub-cli",
+      "transport": {
+        "type": "stdio"
+      },
+      "packageArguments": [
+        {
+          "type": "positional",
+          "value": "rest-connector",
+          "isRequired": true
+        },
+        {
+          "type": "named",
+          "name": "--spec",
+          "description": "Pfad oder URL zur OpenAPI 3.0 Spezifikation (JSON oder YAML)",
+          "isRequired": true
+        },
+        {
+          "type": "named",
+          "name": "--base-url",
+          "description": "Basis-URL der API. Falls weggelassen, wird die URL aus dem 'servers'-Feld der OpenAPI-Spec übernommen.",
+          "isRequired": false
+        },
+        {
+          "type": "named",
+          "name": "--api-key",
+          "description": "API-Schlüssel für die Authentifizierung (wird als Bearer-Token im Authorization-Header gesendet, sofern kein --api-key-header angegeben ist).",
+          "isRequired": false
+        },
+        {
+          "type": "named",
+          "name": "--api-key-header",
+          "description": "Name des HTTP-Headers, in dem der API-Schlüssel übermittelt wird (Standard: Authorization als Bearer-Token).",
+          "isRequired": false
+        }
+      ]
+    }
+  ]
+}

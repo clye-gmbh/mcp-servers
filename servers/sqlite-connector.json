@@ -1,0 +1,47 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "clye.ai/sqlite-connector",
+  "_meta": {
+    "ai.clye.mcp.serverKey": "sqlite-connector"
+  },
+  "description": "Stellt eine SQLite-Datenbankverbindung als MCP-Server bereit und ermöglicht SQL-Abfragen über das Tool `execute_sql`.",
+  "version": "0.0.0",
+  "title": "SQLite Connector",
+  "icons": [
+    {
+      "src": "https://api.iconify.design/devicon:sqlite.svg"
+    }
+  ],
+  "websiteUrl": "https://ai-hub-cli.s3.de.io.cloud.ovh.net/index.html#sqlite",
+  "packages": [
+    {
+      "registryType": "go",
+      "identifier": "github.com/clye-gmbh/ai-hub-cli",
+      "transport": {
+        "type": "stdio"
+      },
+      "packageArguments": [
+        {
+          "type": "positional",
+          "value": "sqlite-connector",
+          "isRequired": true
+        },
+        {
+          "type": "named",
+          "name": "--dbpath",
+          "isRequired": false,
+          "description": "Path to the SQLite database file. If omitted, an in-memory database is used."
+        }
+      ],
+      "environmentVariables": [
+        {
+          "name": "SQLITE_DB_PATH",
+          "isSecret": false,
+          "isRequired": false,
+          "format": "filepath",
+          "description": "Path to the SQLite database file. Overridden by --dbpath flag."
+        }
+      ]
+    }
+  ]
+}
