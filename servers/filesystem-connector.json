@@ -9,7 +9,8 @@
   "title": "Filesystem Connector",
   "icons": [
     {
-      "src": "https://api.iconify.design/material-symbols:folder.svg"
+      "src": "https://api.iconify.design/material-symbols:folder.svg",
+      "theme": "light"
     }
   ],
   "websiteUrl": "https://ai-hub-cli.s3.de.io.cloud.ovh.net/index.html#filesystem-connector",

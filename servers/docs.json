@@ -9,7 +9,8 @@
   "title": "Docs",
   "icons": [
     {
-      "src": "https://api.iconify.design/material-symbols:menu-book.svg"
+      "src": "https://api.iconify.design/material-symbols:menu-book.svg",
+      "theme": "light"
     }
   ],
   "websiteUrl": "https://docs.clye.ai/clye-docs-mcp-server/",

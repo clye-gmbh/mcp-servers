@@ -9,7 +9,8 @@
   "title": "Oracle Connector",
   "icons": [
     {
-      "src": "https://api.iconify.design/simple-icons:oracle.svg"
+      "src": "https://api.iconify.design/simple-icons:oracle.svg",
+      "theme": "light"
     }
   ],
   "websiteUrl": "https://ai-hub-cli.s3.de.io.cloud.ovh.net/index.html#oracle",

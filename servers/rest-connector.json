@@ -9,7 +9,8 @@
   "title": "REST Connector",
   "icons": [
     {
-      "src": "https://api.iconify.design/material-symbols:api.svg"
+      "src": "https://api.iconify.design/material-symbols:api.svg",
+      "theme": "light"
     }
   ],
   "websiteUrl": "https://ai-hub-cli.s3.de.io.cloud.ovh.net/index.html#rest-connector",

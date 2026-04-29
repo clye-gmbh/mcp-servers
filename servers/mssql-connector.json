@@ -9,7 +9,8 @@
   "title": "MS SQL Server Connector",
   "icons": [
     {
-      "src": "https://api.iconify.design/simple-icons:microsoftsqlserver.svg"
+      "src": "https://api.iconify.design/simple-icons:microsoftsqlserver.svg",
+      "theme": "light"
     }
   ],
   "websiteUrl": "https://ai-hub-cli.s3.de.io.cloud.ovh.net/index.html#ms-sql-server",

@@ -9,7 +9,8 @@
   "title": "Terminal Executor",
   "icons": [
     {
-      "src": "https://api.iconify.design/material-symbols:terminal.svg"
+      "src": "https://api.iconify.design/material-symbols:terminal.svg",
+      "theme": "light"
     }
   ],
   "websiteUrl": "https://ai-hub-cli.s3.de.io.cloud.ovh.net/index.html#terminal-executor",
