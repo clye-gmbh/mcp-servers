@@ -2,7 +2,7 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "ai.clye/mssql-connector",
   "_meta": {
-    "ai.clye.mcp.serverKey": "mssql-connector"
+    "ai.clye/server-key": "mssql-connector"
   },
   "description": "Verbindet einen Microsoft SQL Server als MCP-Server und stellt das Tool execute_sql bereit.",
   "version": "0.0.0",

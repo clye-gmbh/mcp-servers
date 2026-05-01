@@ -2,12 +2,12 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "ai.clye/ms-365",
   "_meta": {
-    "ai.clye.mcp.serverKey": "ms-365",
-    "ai.clye.mcp.defaultEnvironmentVariables": {
+    "ai.clye/server-key": "ms-365",
+    "ai.clye/default-environment-variables": {
       "MS365_MCP_TOKEN_CACHE_PATH": "/data/ms-365-mcp/.token-cache.json",
       "MS365_MCP_SELECTED_ACCOUNT_PATH": "/data/ms-365-mcp/.selected-account.json"
     },
-    "ai.clye.mcp.persistenceDirectory": "/data/ms-365-mcp"
+    "ai.clye/persistence-directory": "/data/ms-365-mcp"
   },
   "description": "Ermöglicht den Zugriff auf Microsoft 365-Dienste wie E-Mails, Kalender, Dateien, Teams, SharePoint.",
   "version": "0.0.0",

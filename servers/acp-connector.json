@@ -2,7 +2,7 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "ai.clye/acp-connector",
   "_meta": {
-    "ai.clye.mcp.serverKey": "acp-connector"
+    "ai.clye/server-key": "acp-connector"
   },
   "description": "Brückt das Agent Client Protocol (ACP) zu lokalen Agenten-Prozessen über stdio.",
   "version": "0.0.0",

@@ -2,7 +2,7 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "ai.clye/docs",
   "_meta": {
-    "ai.clye.mcp.serverKey": "docs"
+    "ai.clye/server-key": "docs"
   },
   "description": "Macht die Dokumentation für KI-Assistenten direkt durchsuchbar.",
   "version": "0.0.0",

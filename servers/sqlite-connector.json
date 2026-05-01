@@ -2,7 +2,7 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "ai.clye/sqlite-connector",
   "_meta": {
-    "ai.clye.mcp.serverKey": "sqlite-connector"
+    "ai.clye/server-key": "sqlite-connector"
   },
   "description": "Stellt eine SQLite-Datenbankverbindung als MCP-Server bereit und ermöglicht SQL-Abfragen.",
   "version": "0.0.0",
