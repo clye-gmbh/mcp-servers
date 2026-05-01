@@ -1,6 +1,6 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-  "name": "clye.ai/oracle-connector",
+  "name": "ai.clye/oracle-connector",
   "_meta": {
     "ai.clye.mcp.serverKey": "oracle-connector"
   },

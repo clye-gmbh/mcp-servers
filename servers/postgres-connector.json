@@ -1,6 +1,6 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-  "name": "clye.ai/postgres-connector",
+  "name": "ai.clye/postgres-connector",
   "_meta": {
     "ai.clye.mcp.serverKey": "postgres-connector"
   },

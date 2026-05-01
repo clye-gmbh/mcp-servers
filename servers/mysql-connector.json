@@ -1,10 +1,10 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-  "name": "clye.ai/mysql-connector",
+  "name": "ai.clye/mysql-connector",
   "_meta": {
     "ai.clye.mcp.serverKey": "mysql-connector"
   },
-  "description": "Verbindet einen MySQL-Datenbankserver und stellt ein `execute_sql`-Tool bereit, um SQL-Abfragen direkt aus dem KI-Assistenten heraus auszuführen.",
+  "description": "Verbindet einen MySQL-Datenbankserver, um SQL-Abfragen direkt auszuführen.",
   "version": "0.0.0",
   "title": "MySQL Connector",
   "icons": [
