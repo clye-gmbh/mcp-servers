@@ -92,14 +92,6 @@
           "description": "Kommagetrennte Liste von Regex-Mustern, um verfügbare Werkzeuge zu filtern. Nur Tools, deren Name auf eines der Muster passt, werden aktiviert."
         },
         {
-          "name": "MS365_MCP_ORG_MODE",
-          "isSecret": false,
-          "isRequired": false,
-          "description": "Wenn gesetzt, wird der Server im Organisationsmodus betrieben, der Arbeits Tools von Microsoft unterstützt.",
-          "choices": ["true", "false"],
-          "default": "true"
-        },
-        {
           "name": "MS365_MCP_OAUTH_TOKEN",
           "isSecret": true,
           "isRequired": false,
