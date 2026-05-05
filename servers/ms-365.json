@@ -111,22 +111,6 @@
           "default": "/data/ms-365-mcp/.selected-account.json",
           "format": "filepath"
         }
-      ],
-      "packageArguments": [
-        {
-          "type": "named",
-          "name": "--work-mode",
-          "isRequired": false,
-          "format": "boolean",
-          "choices": ["true", "false"]
-        },
-        {
-          "type": "named",
-          "name": "--read-only",
-          "isRequired": false,
-          "format": "boolean",
-          "choices": ["true", "false"]
-        }
       ]
     }
   ]
