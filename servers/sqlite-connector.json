@@ -16,16 +16,11 @@
   "packages": [
     {
       "registryType": "system",
-      "identifier": "ai-hub-cli",
+      "identifier": "sqlite-connector",
       "transport": {
         "type": "stdio"
       },
       "packageArguments": [
-        {
-          "type": "positional",
-          "value": "sqlite-connector",
-          "isRequired": true
-        },
         {
           "type": "named",
           "name": "--dbpath",

@@ -16,16 +16,11 @@
   "packages": [
     {
       "registryType": "system",
-      "identifier": "ai-hub-cli",
+      "identifier": "mysql-connector",
       "transport": {
         "type": "stdio"
       },
       "packageArguments": [
-        {
-          "type": "positional",
-          "value": "mysql-connector",
-          "isRequired": true
-        },
         {
           "type": "named",
           "name": "--host",

@@ -16,17 +16,10 @@
   "packages": [
     {
       "registryType": "system",
-      "identifier": "ai-hub-cli",
+      "identifier": "python-executor",
       "transport": {
         "type": "stdio"
-      },
-      "packageArguments": [
-        {
-          "type": "positional",
-          "value": "python-executor",
-          "isRequired": true
-        }
-      ]
+      }
     }
   ]
 }

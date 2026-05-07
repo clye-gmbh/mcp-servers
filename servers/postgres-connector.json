@@ -16,16 +16,11 @@
   "packages": [
     {
       "registryType": "system",
-      "identifier": "ai-hub-cli",
+      "identifier": "postgres-connector",
       "transport": {
         "type": "stdio"
       },
       "packageArguments": [
-        {
-          "type": "positional",
-          "value": "postgres-connector",
-          "isRequired": true
-        },
         {
           "type": "named",
           "name": "--dsn",

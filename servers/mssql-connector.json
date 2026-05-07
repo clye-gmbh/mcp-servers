@@ -17,16 +17,11 @@
   "packages": [
     {
       "registryType": "system",
-      "identifier": "ai-hub-cli",
+      "identifier": "mssql-connector",
       "transport": {
         "type": "stdio"
       },
       "packageArguments": [
-        {
-          "type": "positional",
-          "value": "mssql-connector",
-          "isRequired": true
-        },
         {
           "type": "named",
           "name": "--host",

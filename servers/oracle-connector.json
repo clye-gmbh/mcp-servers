@@ -17,7 +17,7 @@
   "packages": [
     {
       "registryType": "system",
-      "identifier": "ai-hub-cli",
+      "identifier": "oracle-connector",
       "transport": {
         "type": "stdio"
       },

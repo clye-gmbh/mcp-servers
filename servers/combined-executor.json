@@ -17,17 +17,10 @@
   "packages": [
     {
       "registryType": "system",
-      "identifier": "ai-hub-cli",
+      "identifier": "combined-executor",
       "transport": {
         "type": "stdio"
-      },
-      "packageArguments": [
-        {
-          "type": "positional",
-          "value": "combined-executor",
-          "isRequired": true
-        }
-      ]
+      }
     }
   ]
 }

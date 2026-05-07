@@ -17,16 +17,11 @@
   "packages": [
     {
       "registryType": "system",
-      "identifier": "ai-hub-cli",
+      "identifier": "filesystem-connector",
       "transport": {
         "type": "stdio"
       },
       "packageArguments": [
-        {
-          "type": "positional",
-          "value": "filesystem-connector",
-          "isRequired": true
-        },
         {
           "type": "named",
           "name": "--path",
